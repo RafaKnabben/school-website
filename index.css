@@ -301,14 +301,37 @@ nav {
     display: block;
 }
 
-.table {
+.table-section {
     margin: 0 auto;
     padding: 4em;
+    display: table;
 }
 
-.square {
-    width: 10em;
-    height: 10em;
+.first-row {
+    width: 13em;
+    height: 13em;
     background-color: rgb(73, 187, 187);
-    border: 1em;
+    border: solid white .5em;
+    display: table-cell;
+}
+
+.first-row a {
+    text-align: center;
+    color: white;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+.sec-row {
+    width: 13em;
+    height: 13em;
+    background-color: rgb(73, 187, 187);
+    border: solid white .5em;;
+    display: table-cell;
+}
+
+.sec-row a {
+    text-align: center;
+    color: white;
+    font-size: 1.5em;
 }

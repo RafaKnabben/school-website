@@ -341,7 +341,7 @@ nav {
     margin: 0 auto;
     display: flex;
     padding-top: 2em;
-    /* flex-direction: row; */
+    align-items: center;
 }
 
 .footer-kontakt {
@@ -350,10 +350,28 @@ nav {
     /* width: 50%; */
 }
 
+#kontakt-footer {
+    font-size: 1.20em;
+    color: whitesmoke;
+    font-weight: bold;
+    font-family: "Lato";
+}
+
+.kontakt-footer {
+    font-size: 1em;
+    color: rgb(29, 21, 14);
+    font-family: "Lato";
+    margin: 0;
+}
+
 .footer-list {
     width: 50%;
     text-align: center;
     /* width: 50%; */
+}
+
+.footer-list ul {
+    padding: 0;
 }
 
 .footer-list li {
@@ -362,9 +380,9 @@ nav {
 
 .footer-list a {
     text-decoration: none;
-    color: white;
-    font-size: 1.15em;
-    font-weight: bold;
+    color: whitesmoke;
+    font-size: 1.10em;
+    font-family: "Lato";
 }
 
 .bottom {

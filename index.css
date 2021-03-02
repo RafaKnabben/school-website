@@ -110,46 +110,6 @@ nav {
     background-color: #292c30;
 }
 
-@media screen and (max-width:1024px){
-    .nav-list {
-        width: 70%;
-    }
-}
-
-@media screen and (max-width:768px){
-    body {
-        overflow-x: hidden;
-    }
-
-    .nav-list {
-        position: absolute;
-        right: 0px;
-        height: 600px;
-        top: 4.5em;
-        background-color: rgba(252, 167, 45, 0.60);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 50%;
-        transform: translateX(100%);
-        transition: transform 0.5s ease-in;
-        z-index: 3;
-    }
-
-    .nav-list li {
-        opacity: 0;
-    }
-
-    .burguer {
-        display: block;
-        cursor: pointer;
-    }
-
-    .footer-col {
-        flex-direction: column;
-    }
-}
-
 .nav_active {
     transform: translateX(0);
 }
@@ -294,6 +254,7 @@ nav {
 .table-section {
     margin: 0 auto;
     padding: 4em;
+    /* display: flex; */
     display: table;
     text-align: center;
 }
@@ -301,9 +262,10 @@ nav {
 .first-row {
     width: 14em;
     height: 14em;
-    line-height: 13em;
+    line-height: 14em;
     background-color: rgb(56, 150, 150);
     border: solid white .75em;
+    /* display: flex; */
     display: table-cell;
 }
 
@@ -317,9 +279,11 @@ nav {
 .sec-row {
     width: 14em;
     height: 14em;
-    line-height: 13em;
+    line-height: 14em;
     background-color: rgb(56, 150, 150);
-    border: solid white .75em;;
+    border: solid white .75em;
+    text-align: center;
+    /* display: flex; */
     display: table-cell;
 }
 
@@ -395,4 +359,65 @@ nav {
     margin: 0;
     font-size: 0.75em;
     padding: 1em;
+}
+
+@media screen and (max-width:1024px){
+    .nav-list {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:800px){
+    body {
+        overflow-x: hidden;
+    }
+
+    .nav-list {
+        position: absolute;
+        right: 0px;
+        height: 600px;
+        top: 4.5em;
+        background-color: rgba(252, 167, 45, 0.60);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+        z-index: 3;
+    }
+
+    .nav-list li {
+        opacity: 0;
+    }
+
+    .burguer {
+        display: block;
+        cursor: pointer;
+    }
+
+    .footer-col {
+        flex-direction: column;
+    }
+
+    .table-section {
+    	display: block;  
+        align-items: center; 
+    }
+
+    .first-row {
+        display: block;
+        width: 14em;
+        height: 7em;
+        line-height: 6em;
+        margin: 0 auto;
+    }
+
+    .sec-row {
+        display: block;
+        width: 14em;
+        height: 7em;
+        line-height: 6em;
+        margin: 0 auto;
+    }
 }

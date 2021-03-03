@@ -311,7 +311,6 @@ nav {
 .footer-kontakt {
     width: 50%;
     text-align: center;
-    /* width: 50%; */
 }
 
 #kontakt-footer {
@@ -331,11 +330,11 @@ nav {
 .footer-list {
     width: 50%;
     text-align: center;
-    /* width: 50%; */
 }
 
 .footer-list ul {
     padding: 0;
+    margin-bottom: 2em;
 }
 
 .footer-list li {
@@ -398,6 +397,14 @@ nav {
 
     .footer-col {
         flex-direction: column;
+    }
+
+    .footer-list {
+        width: 100%;
+    }
+
+    .footer-kontakt {
+        width: 100%;
     }
 
     .table-section {

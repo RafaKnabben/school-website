@@ -430,6 +430,17 @@ nav {
         margin: 0 auto;
     }
 
+    .slide-text h3 {
+        font-family: Montserrat;
+        font-size: 2em;
+        text-transform: uppercase;
+    }
+    
+    .slide-text h4 {
+        font-family: Montserrat;
+        font-size: 1em;
+    }
+
     .footer-col {
         flex-direction: column;
     }

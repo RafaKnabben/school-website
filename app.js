@@ -156,10 +156,14 @@ const navAntiClockwise = () => {
 }
 
 // carousel automatic sliding
+const slideInterval = setInterval(
+        navClockwise, 5000);
 
-setInterval(() => {
-        navClockwise();
-    }, 5000);
+    // slideInterval();
+
+    if (window.innerWidth < 800) {
+        clearInterval(slideInterval);
+    };
 
 // carousel buttons
 

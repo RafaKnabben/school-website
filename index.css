@@ -69,7 +69,7 @@ nav {
     font-size: 18px;
 }
 
-.drop-list-über, .drop-list-fach {
+.drop-list-über, .drop-list-fach, .drop-list-burguer {
     display: none;
     font-family: "Lato";
     /* background-color: #fca72d; */
@@ -86,12 +86,30 @@ nav {
     display: block;
 }
 
+.drop-active_burguer {
+    display: block;
+    width: 80%;
+}
+
 .drop-item {
     list-style: none;
 }
 
 .drop-item a {
     font-size: 1.5em;
+    text-decoration: none;
+    color: #292c30;
+    letter-spacing: 1px;
+    padding: 1em 2em 1em;
+    font-weight: bold;
+}
+
+.drop-item-burguer {
+    list-style: none;
+}
+
+.drop-item-burguer a {
+    font-size: 1em;
     text-decoration: none;
     color: #292c30;
     letter-spacing: 1px;
@@ -108,21 +126,6 @@ nav {
     height: 3px;
     margin: 5px;
     background-color: #292c30;
-}
-
-.nav_active {
-    transform: translateX(0);
-}
-
-@keyframes navLinkFade{
-    from {
-        opacity: 0;
-        transform: translateX(50px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0px);
-    }
 }
 
 .carousel {
@@ -254,7 +257,6 @@ nav {
 .table-section {
     margin: 0 auto;
     padding: 4em;
-    /* display: flex; */
     display: table;
     text-align: center;
 }
@@ -265,7 +267,6 @@ nav {
     line-height: 14em;
     background-color: rgb(56, 150, 150);
     border: solid white .75em;
-    /* display: flex; */
     display: table-cell;
 }
 
@@ -283,7 +284,6 @@ nav {
     background-color: rgb(56, 150, 150);
     border: solid white .75em;
     text-align: center;
-    /* display: flex; */
     display: table-cell;
 }
 
@@ -372,7 +372,8 @@ nav {
     }
 
     .nav-list {
-        position: absolute;
+        display: none;
+        /* position: absolute;
         right: 0px;
         height: 600px;
         top: 4.5em;
@@ -383,7 +384,7 @@ nav {
         width: 50%;
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
-        z-index: 3;
+        z-index: 3; */
     }
 
     .nav-list li {
@@ -393,6 +394,40 @@ nav {
     .burguer {
         display: block;
         cursor: pointer;
+    }
+
+    .carousel {
+        height: auto;
+    }
+
+    .carousel-slide {
+        position: static;
+    }
+
+    .carousel_button {
+        display: none;
+    }
+
+    .slide-button {
+        display: none;
+    }
+
+    .carousel_indicator {
+        display: none;
+    }
+
+    .slide-text {
+        width: 50%;
+        position: static;
+        top: auto;
+        transform: none;
+        right: auto;
+        font-size: 20px;
+        text-shadow: none;
+        color: black;
+        padding: 1em;
+        text-align: center;
+        margin: 0 auto;
     }
 
     .footer-col {
@@ -426,5 +461,16 @@ nav {
         height: 7em;
         line-height: 6em;
         margin: 0 auto;
+    }
+}
+
+@keyframes navLinkFade{
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
     }
 }

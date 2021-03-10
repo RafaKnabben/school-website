@@ -25,10 +25,13 @@ observer.observe(spot);
 
 const überButton = document.querySelector("#über-button");
 const fachButton = document.querySelector("#fach-button");
+const burguerButton = document.querySelector(".burguer");
 const dropÜber = document.querySelector(".drop-list-über");
 const dropFach = document.querySelector(".drop-list-fach");
+const dropBurguer = document.querySelector(".drop-list-burguer");
 const dropActivateFach = document.querySelector(".drop-activate_fach");
 const dropActivateÜber = document.querySelector(".drop-activate_über");
+const dropActiveBurguer = document.querySelector(".drop-active_burguer");
 
 überButton.addEventListener("click", (e) =>{
     e.preventDefault();
@@ -46,18 +49,24 @@ fachButton.addEventListener("click", (e) =>{
 
 })
 
+burguerButton.addEventListener("click", (e) => {
+    e.preventDefault();
+
+        dropBurguer.classList.toggle("drop-active_burguer");
+})
+
 //nav burguer sliding
 
-const navSlide = () => {
-    const burguer = document.querySelector(".burguer");
-    const nav = document.querySelector(".nav-list");
+// const navSlide = () => {
+//     const burguer = document.querySelector(".burguer");
+//     const nav = document.querySelector(".nav-list");
 
-    burguer.addEventListener("click", () => {
-        nav.classList.toggle("nav_active")
-    })
-};
+//     burguer.addEventListener("click", () => {
+//         nav.classList.toggle("nav_active")
+//     })
+// };
 
-navSlide();
+// navSlide();
 
 // carousel sliding
 
